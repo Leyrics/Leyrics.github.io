@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>云麓11队用户端监控</title>
+    <script type="text/javascript" src="clock.js"></script>
+</head>
+<body>
+    <center>
+        <img src="logo2.jpg" width="400">
+        <h1>基于无人机的风电叶片自主巡检系统</h1>
+        <p>15104 云麓11队</p>
+        <p>无人机 <a href="http://192.168.43.183/" target="_black">飞行实况</a></p>
+        <p class="red" style="font-size: 24px;"><strong>风电叶片原图及缺陷标记</strong></p>
+        <!--<img src="breakdownread/frame_3112.jpg">-->
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .image-container {
+                text-align: center;
+            }
+
+            img {
+                max-width: 600px; /* 根据需要调整图片宽度 */
+                /*--max-height: 200px;*/ /* 根据需要调整图片高度 */
+                margin: 0px;
+            }
+        </style>
+
+        <!-- 第1组-->
+        <div class="container">
+            <div class="image-container">
+                <img src="breakdownread/1.jpg" alt="图1.1">
+                <p>叶片实况p1</p>
+            </div>
+            <div class="image-container">
+                <img src="breakdownwrite/1.jpg" alt="图1.2">
+                <p>缺陷识别p1</p>
+            </div>
+        </div>
+
+        <!-- 第2组-->
+        <div class="container">
+            <div class="image-container">
+                <img src="breakdownread/2.jpg" alt="图2.1">
+                <p>叶片实况p2</p>
+            </div>
+            <div class="image-container">
+                <img src="breakdownwrite/2.jpg" alt="图2.2">
+                <p>缺陷识别p2</p>
+            </div>
+        </div>
+
+        <!-- 第3组-->
+        <div class="container">
+            <div class="image-container">
+                <img src="breakdownread/3.jpg" alt="图3.1">
+                <p>叶片实况p3</p>
+            </div>
+            <div class="image-container">
+                <img src="breakdownwrite/3.jpg" alt="图3.2">
+                <p>缺陷识别p3</p>
+            </div>
+        </div>
+
+        <!--显示时钟-->
+        <!-- <h3>页面支持JavaScript，以下时钟/日期使用JavaScript实现。 </h3> -->
+
+
+        <h1 id="date"></h1>
+        <span id="msg" style="font-size: 30px;background-color: greenyellow;"></span>
+        <p></p>
+        <img src="logo.png" width="300">
+    </center>
+</body>
+</html>
